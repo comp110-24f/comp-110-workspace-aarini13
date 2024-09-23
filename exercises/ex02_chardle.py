@@ -2,6 +2,12 @@
 
 __author__ = "730550999"
 
+"""inputs in function not needed since it will ask question twice"""
+
+
+def main() -> None:
+    contains_char()
+
 
 def input_word() -> str:
     guess_word = str(input("Enter a 5-character word: "))
@@ -41,13 +47,6 @@ def contains_char(word=input_word(), letter=input_letter()) -> None:
         print(
             "No instances of " + letter + " found in " + word
         )  # if else after while to ensure the count is completed
-
-
-"""inputs in function not needed since it will ask question twice"""
-
-
-def main() -> None:
-    contains_char()
 
 
 if __name__ == "__main__":
